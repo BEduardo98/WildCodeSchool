@@ -6,7 +6,7 @@ J'ai utilisé les technos suivantes:
 - Mongoose pour le schema du data et la connection au serveur MongoDB
 - Body-parser qui nous permet de parcourir nos données pour pouvoir les afficher correctement
 - Express qui permet la création des routes et le démarrage du serveur local
-- SASS pour la mise en page de notre page
+- SASS pour la mise en page de notre site
 
 Dans la partie server.js on retrouve : 
 - la connection au serveur de MongoDB
