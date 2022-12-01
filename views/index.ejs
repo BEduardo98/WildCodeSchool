@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../scss/index.css" />
+    <title>Les Argonautes</title>
+  </head>
+  <body>
+    <!--Header Section-->
+    <header>
+      <div class="header__div">
+        <img
+          class="header__div__img"
+          src="https://www.wildcodeschool.com/assets/logo_main-e4f3f744c8e717f1b7df3858dce55a86c63d4766d5d9a7f454250145f097c2fe.png"
+          alt="Wild Code School Logo"
+        />
+        <h1 class="header__div__title">Les Argonautes</h1>
+      </div>
+    </header>
+
+    <!--Main Section-->
+    <main>
+      <!--New Member Form-->
+      <div class="general__form">
+        <h2 class="general__form__title">Ajouter un(e) Argonaute</h2>
+        <form class="formulaire__style" method="post" action="/">
+          <label class="formulaire__style__label" for="name">Nom de l'Argonaute</label>
+          <input type="text" name="name" class="formulaire__style__input" placeholder="Charalampos" />
+          <button type="submit" class="formulaire__style__button">Envoyer</button>
+        </form>
+      </div>
+
+      <!--Member List-->
+      <div class="general__member">
+        <h2 class="general__member__title">Membres de l'équipage</h2>
+        <section class="member__list">
+          <%userNames.forEach(firstName => {%>
+          <div class="member__list__item"><%= firstName.name %></div>
+          <%})%>
+        </section>
+      </div>
+    </main>
+    <!--Footer-->
+    <footer>
+      <p>Réalisé par Jason en Anthestérion de l'an 515 avant JC</p>
+    </footer>
+  </body>
+</html>
